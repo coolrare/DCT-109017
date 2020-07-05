@@ -10,6 +10,8 @@ export class HeaderComponent implements OnInit {
   sitename = 'Hello World';
   subtitle = '記載著 Will 在網路世界的學習心得與技術分享';
 
+  fontSize = 12;
+
   constructor() { }
 
   ngOnInit(): void {
@@ -20,6 +22,7 @@ export class HeaderComponent implements OnInit {
 
   changeSitename(evt: MouseEvent): void {
     console.log(evt);
+    this.fontSize++;
     if (evt.ctrlKey) {
       this.sitename = 'The Will Will Web';
     }
