@@ -7,4 +7,8 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   keyword = 'TEST';
+
+  doSearch(str: string): void {
+    this.keyword = str;
+  }
 }
