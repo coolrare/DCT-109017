@@ -7,6 +7,7 @@ import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { NoLinkDirective } from './no-link.directive';
 import { ArticleComponent } from './article/article.component';
+import { MaskPipe } from './mask.pipe';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { ArticleComponent } from './article/article.component';
     HeaderComponent,
     FooterComponent,
     NoLinkDirective,
-    ArticleComponent
+    ArticleComponent,
+    MaskPipe
   ],
   imports: [
     BrowserModule,
