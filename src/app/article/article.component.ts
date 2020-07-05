@@ -30,4 +30,8 @@ export class ArticleComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  doDelete(): void {
+
+  }
+
 }
