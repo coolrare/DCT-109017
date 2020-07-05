@@ -74,6 +74,10 @@ export class AppComponent {
     }
   ];
 
+  deleteArticle(id: number): void {
+    console.log('刪除 ' + id);
+  }
+
   doSearch(str: string): void {
     this.keyword = str;
   }
