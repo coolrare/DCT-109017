@@ -11,7 +11,7 @@
         <!-- <pre>{{data|json}}</pre> -->
 
         <!-- Article START-->
-        <app-article *ngFor="let item of data; let i=index"
+        <app-article *ngFor="let item of data$|async; let i=index"
           [i]="i" [item]="item" (delete)="deleteArticle($event)">
         </app-article>
 
